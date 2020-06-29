@@ -2,3 +2,4 @@ node_modules
 .vscode
 assets/scss
 assets/js/core.js
+assets/images/works/*.png
