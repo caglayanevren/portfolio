@@ -3,3 +3,4 @@ node_modules
 assets/scss
 assets/js/core.js
 assets/images/works/*.png
+assets/images/works/orj/*.png
