@@ -1,6 +1,21 @@
+# dependecies installed by npm
 node_modules
-.vscode
-assets/scss
-assets/js/core.js
-assets/images/works/*.png
-assets/images/works/orj/*.png
+
+# build artefacts
+_site
+
+# secrets
+.env
+.env.local
+
+# logs
+*.log
+report.html
+
+# cache
+.eslintcache
+.stylelintcache
+.cache
+
+# Local Netlify folder
+.netlify

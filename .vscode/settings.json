@@ -1,0 +1,18 @@
+{
+    "html-css-class-completion.HTMLLanguages": ["html", "nunjucks", "njk"],
+    "html.suggest.html5": true,
+    "emmet.includeLanguages": {
+        "postcss": "css",
+        "nunjucks": "html",
+        "njk": "html"
+    },
+    "files.associations": {
+        "*.njk": "njk"
+    },
+    "svg.preview.background": "transparent",
+    "editor.quickSuggestions": {
+        "comments": false, // <- no 24x7 IntelliSense in comments
+        "strings": true, // but in strings and the other parts of source files
+        "other": true
+    }
+}

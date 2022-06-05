@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ language }}">
+{% include 'partials/head.njk' %}
+<body{% if bodyClass %} class="{{ bodyClass }}" {% endif %}>
+<!--[if lte IE 9]><p class="browserupgrade-en">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+{% include 'partials/topmenu.njk' %}
+<!-- main-container -->
+{%- block main %}{% endblock -%}
+<!-- /main-container -->
+{% include 'partials/footer.njk' %}
+{% if script -%}<script type="module" src="{{ script }}"></script>{%- endif %}
+</body>
+</html>

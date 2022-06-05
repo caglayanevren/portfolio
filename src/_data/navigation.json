@@ -1,0 +1,14 @@
+{
+    "section0": {
+        "text": "Home",
+        "url": "index.html#top"
+    },
+    "section1": {
+        "text": "About Me",
+        "url": "index.html#aboutme"
+    },
+    "section2": {
+        "text": "Works",
+        "url": "index.html#works"
+    }
+}

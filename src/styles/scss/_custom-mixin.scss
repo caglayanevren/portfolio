@@ -1,0 +1,57 @@
+@mixin defineColorRGB($color-name, $value) {
+    $red: red($value);
+    $green: green($value);
+    $blue: blue($value);
+    #{$color-name}: unquote("rgb(#{$red}, #{$green}, #{$blue})");
+    #{$color-name}-rgb: $red, $green, $blue;
+    #{$color-name}-r: $red;
+    #{$color-name}-g: $green;
+    #{$color-name}-b: $blue;
+}
+:root {
+    @include defineColorRGB(--white, #ffffff);
+    @include defineColorRGB(--gray-100, #e6e6e6);
+    @include defineColorRGB(--gray-200, #cccccc);
+    @include defineColorRGB(--gray-300, #b3b3b3);
+    @include defineColorRGB(--gray-400, #999999);
+    @include defineColorRGB(--gray-500, #808080);
+    @include defineColorRGB(--gray-600, #666666);
+    @include defineColorRGB(--gray-700, #4d4d4d);
+    @include defineColorRGB(--gray-800, #333333);
+    @include defineColorRGB(--gray-900, #1a1a1a);
+    @include defineColorRGB(--black, #000000);
+    @include defineColorRGB(--color-turuncu, #ff8500);
+    --gradient: linear-gradient(135deg, #ff8500 0%, #d100ff 100%);
+    --font: 'Inter', sans-serif;
+    --font-second: 'Playfair Display', serif;
+    --bold: 900;
+}
+/* offcanvas */
+$offcanvas-horizontal-width: 70%;
+$offcanvas-vertical-height: 100vh;
+$offcanvas-transition-duration: 0.2s;
+/* breakpoint variables */
+$xmobile-width: 426px;
+$mobile-width: 576px;
+$tablet-width: 768px;
+$smalldesktop-width: 992px;
+$desktop-width: 1200px;
+$largedesktop-width: 1400px;
+/* mixin media queries	*/
+@mixin xsm {@media (min-width: #{$xmobile-width}) and (max-width: #{$mobile-width - .02px}) {@content;}}
+@mixin sm {@media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - .02px}) {@content;}}
+@mixin md {@media (min-width: #{$tablet-width}) and (max-width: #{$smalldesktop-width - .02px}) {@content;}}
+@mixin lg {@media (min-width: #{$smalldesktop-width}) and (max-width: #{$desktop-width - .02px}) {@content;}}
+@mixin xl {@media (min-width: #{$desktop-width}) and (max-width: #{$largedesktop-width - .02px}) {@content;}}
+@mixin xxl {@media (min-width: #{$largedesktop-width}) {@content;}}
+@mixin min-xl {@media (min-width: #{$desktop-width}) {@content;}}
+@mixin min-lg {@media (min-width: #{$smalldesktop-width}) {@content;}}
+@mixin min-md {@media (min-width: #{$tablet-width}) {@content;}}
+@mixin min-sm {@media (min-width: #{$mobile-width}) {@content;}}
+@mixin min-xsm {@media (min-width: #{$xmobile-width}) {@content;}}
+@mixin max-xxl {@media (max-width: #{$largedesktop-width - .02px}) {@content;}}
+@mixin max-xl {@media (max-width: #{$desktop-width - .02px}) {@content;}}
+@mixin max-lg {@media (max-width: #{$smalldesktop-width - .02px}) {@content;}}
+@mixin max-md {@media (max-width: #{$tablet-width - .02px}) {@content;}}
+@mixin max-sm {@media (max-width: #{$mobile-width - .02px}) {@content;}}
+@mixin max-xsm {@media (max-width: #{$xmobile-width - .02px}) {@content;}}
