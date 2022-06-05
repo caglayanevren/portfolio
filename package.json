@@ -7,7 +7,7 @@
     },
     "license": "MIT",
     "scripts": {
-        "clean": "rimraf _site dist .cache src/styles/css",
+        "clean": "rimraf _site docs .cache src/styles/css",
         "preview": "npx vite preview",
         "dev": "yarn clean && cross-env NODE_ENV=development run-p dev:*",
         "dev:eleventy": "npx @11ty/eleventy --watch",

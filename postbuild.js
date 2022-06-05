@@ -5,7 +5,7 @@ const copyFilePromise = util.promisify(fs.copyFile);
 const replace = require("replace-in-file");
 const escapeRegExp = require("lodash.escaperegexp");
 
-let baseDir = "dist";
+let baseDir = "docs";
 
 fs.readdir(`./${baseDir}`, (err, files) => {
     let arrayOfFiles1 = [];

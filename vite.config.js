@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 const path = require("path");
 const glob = require("fast-glob");
 const root = path.resolve(__dirname, "_site");
-const outDir = path.resolve(__dirname, "dist");
+const outDir = path.resolve(__dirname, "docs");
 
 // Find all HTML files and build an object of names and paths to work from
 const files = glob.sync(path.resolve(__dirname, "_site") + "/**/*.html").reduce((acc, cur) => {
