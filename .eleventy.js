@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 const slugify = require("slugify");
+require("dotenv").config();
 /**
  * @typedef {import('@11ty/eleventy/src/UserConfig')} EleventyConfig
  * @typedef {ReturnType<import('@11ty/eleventy/src/defaultConfig')>} EleventyReturnValue
@@ -107,6 +108,10 @@ module.exports = function (config) {
         };
         return slugify(input, options);
     });
+
+    config.addGlobalData("notionApiKey", process.env.NOTION_API_KEY);
+    config.addGlobalData("notionDatabaseId", process.env.NOTION_DATABASE_ID);
+    config.addGlobalData("notionWorksBlockId", process.env.NOTION_WORKSBLOCK_ID);
 
     return {
         dir: {

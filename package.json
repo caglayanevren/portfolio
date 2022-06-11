@@ -9,7 +9,7 @@
     "scripts": {
         "clean": "rimraf _site docs .cache src/styles/css",
         "preview": "npx vite preview",
-        "dev": "yarn clean && cross-env NODE_ENV=development NOTION_API_KEY=$NOTION_API_KEY NOTION_DATABASE_ID=$NOTION_DATABASE_ID run-p dev:*",
+        "dev": "yarn clean && cross-env NODE_ENV=development run-p dev:*",
         "dev:eleventy": "npx @11ty/eleventy --watch",
         "dev:vite": "npx vite",
         "build": "cross-env NODE_ENV=production run-s clean build:* postbuild",
@@ -37,7 +37,7 @@
         "@notionhq/client": "^1.0.4",
         "@popperjs/core": "^2.11.2",
         "bootstrap": "^5.1.3",
-        "dotenv": "^16.0.1",
+        "dotenv": "16.0.0",
         "gsap": "^3.9.1",
         "tiny-slider": "^2.9.4",
         "vite": "^2.8.3"
