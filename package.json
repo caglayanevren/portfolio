@@ -9,10 +9,10 @@
     "scripts": {
         "clean": "rimraf _site docs .cache src/styles/css",
         "preview": "npx vite preview",
-        "dev": "yarn clean && cross-env NODE_ENV=development run-p dev:*",
+        "dev": "yarn clean && cross-env NODE_ENV=development NOTION_API_KEY=$NOTION_API_KEY NOTION_DATABASE_ID=$NOTION_DATABASE_ID run-p dev:*",
         "dev:eleventy": "npx @11ty/eleventy --watch",
         "dev:vite": "npx vite",
-        "build": "cross-env NODE_ENV=production run-s clean build:* postbuild",
+        "build": "cross-env NODE_ENV=production NOTION_API_KEY=$NOTION_API_KEY NOTION_DATABASE_ID=$NOTION_DATABASE_ID run-s clean build:* postbuild",
         "build:eleventy": "npx @11ty/eleventy",
         "build:vite": "npx vite build",
         "postbuild": "node postbuild.js"
