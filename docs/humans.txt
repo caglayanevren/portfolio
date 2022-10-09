@@ -1,0 +1,17 @@
+﻿# humanstxt.org/
+# The humans responsible & technology colophon
+
+Evren Çağlayan
+Front-End Developer
+caglayanevren@gmail.com
+https://caglayanevren.github.io/
+	
+# TECHNOLOGY COLOPHON
+
+	HTML5, CSS3, Modernizr
+	11ty, Nunjucks, Vite
+	NodeJS, Yarn
+
+# SITE
+Background Image: Palamut bükü, Datça, Muğla © Evren Çağlayan / 2017 June
+Last update: 2022 October 9
