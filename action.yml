@@ -1,5 +1,8 @@
 name: "GitHub Pages action"
 description: "GitHub Actions for GitHub Pages"
+runs:
+    using: "node16"
+    main: "docs/index.html"
 inputs:
     deploy_key:
         description: "Set a SSH private key from repository secret value for pushing to the remote branch."
