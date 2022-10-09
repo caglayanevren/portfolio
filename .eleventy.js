@@ -13,7 +13,7 @@ function imageShortcode(src, alt, sizes = "100vw", widths, formats, classes, url
     let options = {
         widths: widths,
         formats: formats,
-        urlPath: urlPaths,
+        //urlPath: urlPaths,
         outputDir: "./_site/images/optimized/",
         filenameFormat: function (id, src, width, format, options) {
             const extension = path.extname(src);
@@ -37,19 +37,48 @@ function imageShortcode(src, alt, sizes = "100vw", widths, formats, classes, url
     //console.log(metadata);
     return Image.generateHTML(metadata, imageAttributes);
 }
+async function asyncImageShortcode(src, alt, sizes = "100vw", classes) {
+    if (alt === undefined) {
+        // You bet we throw an error on missing alt (alt="" works okay)
+        throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+    }
+    let metadata = await Image(src, {
+        formats: ["webp", "jpeg"],
+        widths: [634, 544, 454, 694, 514, 334],
+        outputDir: "_site/img/",
+        sizes,
+    });
+    let lowsrc = metadata.jpeg[0];
+    let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+
+    return `<picture>
+        ${Object.values(metadata)
+            .map((imageFormat) => {
+                return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map((entry) => entry.srcset).join(", ")}" sizes="${sizes}">`;
+            })
+            .join("\n")}
+        <img
+        src="${lowsrc.url}"
+        width="${highsrc.width}"
+        height="${highsrc.height}"
+        alt="${alt}"
+        class="${classes}"
+        loading="lazy"
+        decoding="async">
+    </picture>`;
+}
+
+const markdown = require("markdown-it")({
+    html: false,
+    breaks: true,
+    linkify: true,
+});
 
 module.exports = function (config) {
     config.setWatchJavaScriptDependencies(false);
     config.setNunjucksEnvironmentOptions({ throwOnUndefined: true });
     config.addWatchTarget("./src/styles/scss/");
     config.addWatchTarget("./src/js/");
-
-    // Static assets to pass through
-    config.addPassthroughCopy("./src/images");
-    config.addPassthroughCopy("./src/public");
-    config.addPassthroughCopy("./src/js/anasayfa.js");
-    config.addPassthroughCopy("./src/js/main.js");
-    config.addPassthroughCopy("./src/js/modernizr.js");
 
     config.addNunjucksTag("uppercase", function (nunjucksEngine) {
         return new (function () {
@@ -80,6 +109,7 @@ module.exports = function (config) {
     });
 
     config.addShortcode("image", imageShortcode);
+    config.addNunjucksAsyncShortcode("asyncimage", asyncImageShortcode);
 
     config.addFilter("slug", (input) => {
         const options = {
@@ -108,10 +138,20 @@ module.exports = function (config) {
         return slugify(input, options);
     });
 
+    config.addFilter("markdown", function (rawString) {
+        return markdown.render(rawString);
+    });
+
     //config.addGlobalData("notionApiKey", process.env.NOTION_API_KEY);
     //config.addGlobalData("notionDatabaseId", process.env.NOTION_DATABASE_ID);
     //config.addGlobalData("notionWorksBlockId", process.env.NOTION_WORKSBLOCK_ID);
 
+    // Static assets to pass through
+    config.addPassthroughCopy("./src/images");
+    config.addPassthroughCopy("./src/public");
+    config.addPassthroughCopy("./src/js/anasayfa.js");
+    config.addPassthroughCopy("./src/js/main.js");
+    config.addPassthroughCopy("./src/js/modernizr.js");
     return {
         dir: {
             input: "src",

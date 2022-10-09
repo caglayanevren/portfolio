@@ -5,6 +5,8 @@ const { generateDiscussionLink } = require("./filters");
 const fetch = require("node-fetch");
 const cheerio = require("cheerio");
 const metadata = require("../_data/metadata.json");
+require("dotenv").config();
+
 const TWITTER_TOKEN = process.env.TWITTER_API_KEY;
 
 const getLocalImages = async (note, property = "Images", folder) => {

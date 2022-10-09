@@ -1,3 +1,4 @@
+require("dotenv").config();
 import { Client } from "@notionhq/client";
 
 const notion = new Client({

@@ -1,6 +1,7 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 const Image = require("@11ty/eleventy-img");
+require("dotenv").config();
 
 const IMG_CACHE_FILE_PATH = "src/_cache/images.json";
 const external = /https?:\/\/((?:[\w\d-]+\.)+[\w\d]{2,})/i;

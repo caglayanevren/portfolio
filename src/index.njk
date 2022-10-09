@@ -34,15 +34,21 @@
                             <p class="display-3">about me</p>
                         </div>
                         <div class="col-lg-7 offset-lg-2">
-                            <p>I have a MSc degree in Biology which gave me the huge and substantial vision of life. With this energizing vision and understanding, I found myself in the world of design. I started my professional design journey with book and magazine layouts. Then I was drawn to the fascinating realm of digital design where I have been designing web sites. Learning how to code and learning new things everyday has been my joyful obsession. Currently, I am madly into web development frameworks such as React, Vue and Svelte.</p>
-                            <p>I am happily married and living with two adorable cats in Bodrum</p>
+                            <p>I have a MSc degree in Biology which gave me the huge and substantial vision of life. With this energizing vision and understanding, I found myself in the world of design. I started my professional design journey with book and magazine layouts. Then I was drawn to the fascinating realm of digital design where I have been designing web sites. Learning how to code and learning new things everyday has been my joyful obsession. Currently, I am madly into web development</p>
+                            {# <p>I am happily married and living with two adorable cats in Bodrum</p> #}
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="index-item-works">
+        {# <section>
+            <div class="container">
+
+            </div>
+        </section> #}
+
+        {# <section class="index-item-works">
             <div class="container" id="works">
                 <p class="display-3">works</p>
                 <div class="card-deck">
@@ -69,7 +75,6 @@
                     </div>
                     <div class="card">
                         <a href="https://www.borusan.com/_Media/tr/AnnualReports/2019/home.html" target="_blank">
-							{# <img src="{{ relative_path }}/images/works/borusan2019.jpg" class="card-img-top" alt="Borusan 2019 Annual Report"> #}
 							{% image
 								"src/images/works/borusan2019.png", 
 								"Borusan 2019 Annual Report",
@@ -112,7 +117,6 @@
                     </div>
                     <div class="card">
                         <a href="https://www.ulvikocailik.com.tr" target="_blank">
-							{# <img src="{{ relative_path }}/images/works/ulvikocailik.jpg" class="card-img-top" alt="Ulvi Kocailik Personal Web Site"> #}
 							{% image
 								"src/images/works/ulvikocailik.png", 
 								"Ulvi Kocailik Personal Web Site",
@@ -216,6 +220,44 @@
                             <small class="text-muted"><a href="https://researchcentre.trtworld.com" target="_blank">researchcentre.trtworld.com</a></small>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section> #}
+
+        <section class="index-item-works">
+            <div class="container" id="works">
+                <p class="display-3">works</p>
+                <div class="card-deck">
+                    {% for note in notes %}
+                        {% set imagePath = note.image[0] %}
+                        {% set imageAlt = note.name %}
+                        <div class="card">
+                            <a href="{{ note.link | safe }}" target="_blank">
+                                {% asyncimage imagePath, imageAlt, "(max-width:425.98px) 334px, (max-width:575.98px) 98vw, (max-width:767.98px) 514px, (max-width:991.98px) 694px, (max-width:1199.98px) 454px, (max-width:1399.98px) 544px, (min-width:1400px) 634px", "card-img-top img-fluid" %}
+                                {# {% image
+                                    imagePath, 
+                                    imageAlt,
+                                    "(max-width:425.98px) 334px, (max-width:575.98px) 98vw, (max-width:767.98px) 514px, (max-width:991.98px) 694px, (max-width:1199.98px) 454px, (max-width:1399.98px) 544px, (min-width:1400px) 634px",
+                                    [634,544,454,694,514,334],
+                                    ["webp", "jpg"],
+                                    "card-img-top img-fluid",
+                                    "./images/optimized/",
+                                    "lazy"
+                                %}  #}
+                                {# <img src="{{imagePath}}" class="card-img-top img-fluid" alt="{{imageAlt}}"> #}
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">{{ note.name | safe }}</h5>
+                                <div class="card-text">{{ note.content | markdown | safe }}</div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted d-flex justify-content-between" style="padding: 3px 0 2px;">
+                                    <a href="{{ note.link | safe }}" target="_blank" rel="noopener noreferrer">{{ note.linktext | safe }}</a>
+                                    <a title="Credits" href="{{ note.humanstxtlink | safe }}" target="_blank" rel="noopener noreferrer">🔍</a>
+                                </small>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>

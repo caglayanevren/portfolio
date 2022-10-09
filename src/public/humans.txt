@@ -13,5 +13,5 @@ https://caglayanevren.github.io/
 	NodeJS, Yarn
 
 # SITE
-Background Image: Palamut bükü, Datça, Muğla © Evren Çağlayan / June 2017
-Last update: 2022 June 4
+Background Image: Palamut bükü, Datça, Muğla © Evren Çağlayan / 2017 June
+Last update: 2022 October 9
