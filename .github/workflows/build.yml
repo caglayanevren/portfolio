@@ -25,10 +25,11 @@ jobs:
               run: |
                   npm install
                   npm run build
+              with:
+                  NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+                  NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
               with:
                   publish_dir: ./docs
-                  NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-                  NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
