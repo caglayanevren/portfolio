@@ -17,22 +17,21 @@ jobs:
             - uses: actions/checkout@v3
 
             - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v1
-              with:
-                  node-version: ${{ matrix.node-version }}
+                uses: actions/setup-node@v1
+                with:
+                    node-version: ${{ matrix.node-version }}
 
             - name: Install dependencies & build
-              env:
-                  NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-                  NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-              run: |
-                  npm install
-                  npm run build
-                  
-            - name: Deploy
-              uses: peaceiris/actions-gh-pages@v3
-              if: ${{ github.ref == 'refs/heads/main' }}
-              with:
-                github_token: ${{ secrets.GITHUB_TOKEN }}
-                publish_dir: ./public
+                env:
+                    NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+                    NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+                run: |
+                    npm install
+                    npm run build
 
+            - name: Deploy
+                uses: peaceiris/actions-gh-pages@v3
+                if: ${{ github.ref == 'refs/heads/main' }}
+                with:
+                    github_token: ${{ secrets.GITHUB_TOKEN }}
+                    publish_dir: ./docs
