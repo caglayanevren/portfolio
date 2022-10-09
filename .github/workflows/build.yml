@@ -22,12 +22,12 @@ jobs:
                   node-version: ${{ matrix.node-version }}
 
             - name: Install dependencies & build
+              env:
+                  NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+                  NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
               run: |
                   npm install
                   npm run build
-              with:
-                  NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-                  NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
