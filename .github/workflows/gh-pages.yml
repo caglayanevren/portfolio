@@ -38,6 +38,11 @@ jobs:
           npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        inputs:
+          path:
+            description: "Path of the directory containing the static assets."
+            required: true
+            default: "docs/"
 
   # Deployment job
   deploy:
