@@ -1,3 +1,3 @@
 ## My portfolio pages
 
-with github actions deployment
+with github actions deployment to github pages

@@ -2,16 +2,16 @@
 # The humans responsible & technology colophon
 
 Evren Çağlayan
-Front-End Developer
+Web Developer
 caglayanevren@gmail.com
-https://caglayanevren.github.io/
 	
 # TECHNOLOGY COLOPHON
 
 	HTML5, CSS3, Modernizr
-	11ty, Nunjucks, Vite
-	NodeJS, Yarn
+	NodeJS 16.x, npm-run-all
+	11ty 1.0.0, Nunjucks, Vite 2.9.10
+	Notion, notion-to-md, markdown-it 
 
 # SITE
 Background Image: Palamut bükü, Datça, Muğla © Evren Çağlayan / 2017 June
-Last update: 2022 October 9
+Last update: 2022 October 10
