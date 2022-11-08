@@ -1,15 +1,15 @@
 const util = require("util");
 const luxon = require("luxon");
-const { getLocalImageLink } = require("./helpers");
-const { generateDiscussionLink } = require("./filters");
+//const { getLocalImageLink } = require("./helpers");
+//const { generateDiscussionLink } = require("./filters");
 const fetch = require("node-fetch");
-const cheerio = require("cheerio");
+//const cheerio = require("cheerio");
 const metadata = require("../_data/metadata.json");
 require("dotenv").config();
 
-const TWITTER_TOKEN = process.env.TWITTER_API_KEY;
+//const TWITTER_TOKEN = process.env.TWITTER_API_KEY;
 
-const getLocalImages = async (note, property = "Images", folder) => {
+/* const getLocalImages = async (note, property = "Images", folder) => {
     const imagesNotion = note.properties[property].files;
     const images = [];
     for (const img of imagesNotion) {
@@ -28,14 +28,14 @@ const getLocalImages = async (note, property = "Images", folder) => {
     }
 
     return images;
-};
+}; */
 
-async function updateNotion(notion, itemId, fields) {
+/* async function updateNotion(notion, itemId, fields) {
     notion.pages.update({
         page_id: itemId,
         properties: fields,
     });
-}
+} */
 
 // TODO: add delay for another call
 async function fetchFromNotion(notion, dbId, filter = undefined, cursor = undefined) {
@@ -170,7 +170,7 @@ function getNotionProps(thing, normalize = true) {
     return parsed;
 }
 
-function getUrl(post, type, useDomain = false) {
+/* function getUrl(post, type, useDomain = false) {
     if (type === "note") {
         return `${useDomain ? metadata.domain : metadata.url}/note/${post.id}/`;
     }
@@ -303,12 +303,12 @@ async function updateTweet(notion, posts, type) {
             updateNotion(notion, post.id, { Tweet: tweet });
         }
     });
-}
+} */
 
 module.exports = {
     fetchFromNotion,
     getNotionProps,
     getLocalImages,
-    updateTweet,
-    updateReddit,
+    //updateTweet,
+    //updateReddit,
 };
