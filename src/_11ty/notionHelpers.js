@@ -308,7 +308,7 @@ async function updateTweet(notion, posts, type) {
 module.exports = {
     fetchFromNotion,
     getNotionProps,
-    getLocalImages,
+    //getLocalImages,
     //updateTweet,
     //updateReddit,
 };
