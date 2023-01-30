@@ -13,5 +13,5 @@ caglayanevren@gmail.com
 	Notion, notion-to-md, markdown-it 
 
 # SITE
-Background Image: Palamut bükü, Datça, Muğla © Evren Çağlayan / 2017 June
-Last update: 2022 October 10
+Background Image: Palamut bükü, Datça, Muğla 📷 Evren Çağlayan / 2017 June
+Last update: 2022 November 8
