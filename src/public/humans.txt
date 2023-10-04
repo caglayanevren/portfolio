@@ -8,10 +8,10 @@ caglayanevren@gmail.com
 # TECHNOLOGY COLOPHON
 
 	HTML5, CSS3, Modernizr
-	NodeJS 16.x, npm-run-all
-	11ty 1.0.0, Nunjucks, Vite 2.9.10
+	NodeJS 18.x, npm-run-all
+	11ty 2.0.1, Nunjucks, Vite 4.4.10
 	Notion, notion-to-md, markdown-it 
 
 # SITE
 Background Image: Palamut bükü, Datça, Muğla 📷 Evren Çağlayan / 2017 June
-Last update: 2022 November 8
+Last update: 2023 October 4
