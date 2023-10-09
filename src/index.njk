@@ -66,15 +66,13 @@
                 {# <p class="display-3">works</p> #}
                 <div class="card-deck">
                     {% for note in notes %}
-                        {% set imagePath = note.image[0] %}
-                        {% set imageAlt = note.name %}
                         <div class="card">
                             <a href="{{ note.link | safe }}" target="_blank" class="p-5">
-                                {% asyncimage imagePath, imageAlt, "(max-width:425.98px) 334px, (max-width:575.98px) 98vw, (max-width:767.98px) 514px, (max-width:991.98px) 694px, (max-width:1199.98px) 454px, (max-width:1399.98px) 544px, (min-width:1400px) 634px", "card-img-top img-fluid" %}
+                                {% asyncimage note.image[0], note.name, "(max-width:425.98px) 334px, (max-width:575.98px) 98vw, (max-width:767.98px) 514px, (max-width:991.98px) 694px, (max-width:1199.98px) 454px, (max-width:1399.98px) 544px, (min-width:1400px) 634px", "card-img-top img-fluid" %}
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title">{{ note.name | safe }}</h5>
-                                <div class="card-text">{{ note.content | markdown | safe }}</div>
+                                <div class="card-text">{{ note.content.parent | markdown | safe }}</div>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted d-flex justify-content-between" style="padding: 3px 0 2px;">

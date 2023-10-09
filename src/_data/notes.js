@@ -27,7 +27,7 @@ const getMetadata = (note) => {
         link: note.link,
         linktext: note.linktext,
         humanstxtlink: note.humanstxtlink,
-        info: note.info,
+        //info: note.info,
         image: note.image,
         content: note.content,
     };
@@ -81,7 +81,7 @@ async function fetchNotes(since) {
         }
         return newNotes;
     }
-
+    console.log("no result!!");
     return null;
 }
 

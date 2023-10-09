@@ -2,6 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 const slugify = require("slugify");
+const markdownIt = require("markdown-it");
+const milt = require("markdown-it-link-target");
 /**
  * @typedef {import('@11ty/eleventy/src/UserConfig')} EleventyConfig
  * @typedef {ReturnType<import('@11ty/eleventy/src/defaultConfig')>} EleventyReturnValue
@@ -68,10 +70,10 @@ async function asyncImageShortcode(src, alt, sizes = "100vw", classes) {
     </picture>`;
 }
 
-const markdown = require("markdown-it")({
+const markdown = new markdownIt({
     html: false,
     breaks: true,
-    linkify: true,
+    linkify: false,
 });
 
 module.exports = function (config) {
@@ -109,7 +111,7 @@ module.exports = function (config) {
     });
 
     config.addShortcode("image", imageShortcode);
-    config.addNunjucksAsyncShortcode("asyncimage", asyncImageShortcode);
+    config.addShortcode("asyncimage", asyncImageShortcode);
 
     config.addFilter("slug", (input) => {
         const options = {
@@ -138,7 +140,8 @@ module.exports = function (config) {
         return slugify(input, options);
     });
 
-    config.addFilter("markdown", function (rawString) {
+    config.addFilter("markdown", (rawString) => {
+        markdown.use(milt);
         return markdown.render(rawString);
     });
 
