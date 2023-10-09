@@ -4,6 +4,7 @@ const Image = require("@11ty/eleventy-img");
 const slugify = require("slugify");
 const markdownIt = require("markdown-it");
 const milt = require("markdown-it-link-target");
+const filters = require("./src/utils/filters");
 /**
  * @typedef {import('@11ty/eleventy/src/UserConfig')} EleventyConfig
  * @typedef {ReturnType<import('@11ty/eleventy/src/defaultConfig')>} EleventyReturnValue
@@ -148,6 +149,11 @@ module.exports = function (config) {
     //config.addGlobalData("notionApiKey", process.env.NOTION_API_KEY);
     //config.addGlobalData("notionDatabaseId", process.env.NOTION_DATABASE_ID);
     //config.addGlobalData("notionWorksBlockId", process.env.NOTION_WORKSBLOCK_ID);
+
+    // Filters
+    Object.keys(filters).forEach((filterName) => {
+        config.addFilter(filterName, filters[filterName]);
+    });
 
     // Static assets to pass through
     config.addPassthroughCopy("./src/images");
