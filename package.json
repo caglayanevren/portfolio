@@ -19,7 +19,7 @@
     },
     "devDependencies": {
         "@11ty/eleventy": "^2.0.1",
-        "@11ty/eleventy-img": "^3.1.0",
+        "@11ty/eleventy-img": "^3.1.1",
         "@fullhuman/postcss-purgecss": "^5.0.0",
         "autoprefixer": "10.4.16",
         "browserslist": "^4.22.1",
@@ -33,20 +33,18 @@
         "postcss": "^8.4.31",
         "replace-in-file": "^7.0.1",
         "rimraf": "^5.0.5",
-        "sass": "^1.68.0"
+        "sass": "^1.69.3"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.4.2",
         "@notionhq/client": "^2.2.13",
         "@popperjs/core": "^2.11.8",
         "bootstrap": "^5.3.2",
-        "cheerio": "^1.0.0-rc.12",
         "clean-css": "^5.3.2",
         "dotenv": "^16.3.1",
-        "gsap": "^3.12.2",
         "markdown-it-plain-text": "^0.3.0",
         "notion-to-md": "^3.1.1",
         "tiny-slider": "^2.9.4",
-        "vite": "^4.4.10"
+        "vite": "^4.4.11"
     }
 }
