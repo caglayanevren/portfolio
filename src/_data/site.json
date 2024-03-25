@@ -1,4 +1,5 @@
 {
     "siteName": "Evren Caglayan",
-    "siteDescription": "Evren Caglayan's web protfolio page"
+    "siteDescription": "Evren Caglayan's web protfolio page",
+    "siteBase": "https://caglayanevren.github.io"
 }
