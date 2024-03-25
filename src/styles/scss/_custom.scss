@@ -91,6 +91,7 @@ nav.navbar {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
                 transition: all 0.5s ease;
+                gap: 1.5rem;
                 @include max-lg {
                     margin-top: 25px;
                 }
