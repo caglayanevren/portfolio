@@ -1,14 +1,14 @@
 {
     "section0": {
-        "text": "Home",
-        "url": "index.html#top"
+        "text": "✴︎",
+        "url": "index.html"
     },
     "section1": {
-        "text": "About Me",
-        "url": "index.html#aboutme"
+        "text": "me",
+        "url": "index.html#me"
     },
     "section2": {
-        "text": "Works",
+        "text": "works",
         "url": "index.html#works"
     }
 }

@@ -17,12 +17,19 @@ window.addEventListener("DOMContentLoaded", function () {
     var nav = document.querySelector("nav");
     var navbar = document.querySelector(".navbar-nav");
     document.addEventListener("scroll", function () {
-        if (scrollY > window.innerHeight) {
+        if (scrollY > window.innerHeight / 2) {
             navbar.classList.add("scrolled");
             nav.classList.add("scrolled");
         } else {
             navbar.classList.remove("scrolled");
             nav.classList.remove("scrolled");
+        }
+        if (scrollY > window.innerHeight) {
+            navbar.classList.add("scrolled2");
+            nav.classList.add("scrolled2");
+        } else {
+            navbar.classList.remove("scrolled2");
+            nav.classList.remove("scrolled2");
         }
     });
 });
