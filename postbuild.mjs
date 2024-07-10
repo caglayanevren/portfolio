@@ -1,10 +1,12 @@
-const fs = require("fs");
-const path = require("path");
-const util = require("util");
-const copyFilePromise = util.promisify(fs.copyFile);
-const replace = require("replace-in-file");
-const escapeRegExp = require("lodash.escaperegexp");
-
+import fs from "fs";
+import path from "path";
+import { dirname } from "path";
+//import util from "util";
+import { fileURLToPath } from "url";
+import { replaceInFileSync as replace } from "replace-in-file";
+//const copyFilePromise = util.promisify(fs.copyFile);
+import escapeRegExp from "lodash.escaperegexp";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 let baseDir = "docs";
 
 fs.readdir(`./${baseDir}`, (err, files) => {
@@ -24,7 +26,7 @@ fs.readdir(`./${baseDir}`, (err, files) => {
                     to: ['="./assets/', ", ./assets/"],
                 };
                 try {
-                    let changedFiles = replace.sync(options);
+                    let changedFiles = replace(options);
                     console.log("Modified files:", changedFiles.join(", "));
                 } catch (error) {
                     console.error("Error occurred:", error);
@@ -42,7 +44,7 @@ fs.readdir(`./${baseDir}`, (err, files) => {
                                 to: ['="../assets/', ", ../assets/"],
                             };
                             try {
-                                let changedFiles = replace.sync(options);
+                                let changedFiles = replace(options);
                                 console.log("Modified files:", changedFiles.join(", "));
                             } catch (error) {
                                 console.error("Error occurred:", error);
@@ -60,7 +62,7 @@ fs.readdir(`./${baseDir}`, (err, files) => {
                                             to: ['="../../assets/', ", ../../assets/"],
                                         };
                                         try {
-                                            let changedFiles = replace.sync(options);
+                                            let changedFiles = replace(options);
                                             console.log("Modified files:", changedFiles.join(", "));
                                         } catch (error) {
                                             console.error("Error occurred:", error);
