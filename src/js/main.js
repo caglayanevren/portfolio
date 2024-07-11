@@ -1,9 +1,56 @@
+import Swiper from "swiper";
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import "./modernizr";
 import "../../src/styles/scss/bundle.scss";
 import "../css/backgrounds.css";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "bootstrap";
 
 window.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper(".swiper", {
+        modules: [Navigation, Pagination, Scrollbar, Autoplay],
+        // Default parameters
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 1200px
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+            },
+            // when window width is >= 1440px
+            1440: {
+                slidesPerView: 2,
+                spaceBetween: 100,
+            },
+        },
+        autoplay: {
+            enabled: false,
+            delay: 1000,
+        },
+        on: {
+            init: function () {
+                console.log("swiper initialized");
+            },
+        },
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            draggable: true,
+        },
+    });
+
     var myOffcanvas = document.getElementById("navbarsDefault");
     var fa = document.querySelector(".fa-solid");
     myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
@@ -34,10 +81,10 @@ window.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-let width = window.innerWidth;
+/* let width = window.innerWidth;
 window.addEventListener("resize", function () {
     let newwidth = window.innerWidth;
     if (width != newwidth) {
         window.location.href = window.location.href;
     }
-});
+}); */

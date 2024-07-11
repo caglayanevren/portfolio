@@ -1,0 +1,19 @@
+{% for note in notes %}
+    <div class="swiper-slide">
+        <div class="card">
+            <a href="{{ note.link | safe }}" target="_blank" class="p-3 p-sm-5 w-100 d-block">
+                {% asyncimage note.image[0], note.name, "(max-width:425.98px) 311px, (max-width:575.98px) 96vw, (max-width:767.98px) 589px, (max-width:991.98px) 733px, (max-width:1199.98px) 910px, (max-width:1399.98px) 460px, (min-width:1400px) 684px, (min-width:1920px) 684px", "card-img-top img-fluid" %}
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">{{ note.name | safe }}</h5>
+                <div class="card-text">{{ note.content.parent | markdown | safe }}</div>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted d-flex justify-content-between" style="padding: 3px 0 2px;">
+                    <a href="{{ note.link | safe }}" target="_blank" rel="noopener noreferrer">{{ note.linktext | safe }}</a>
+                    <a title="Credits" href="{{ note.humanstxtlink | safe }}" target="_blank" rel="noopener noreferrer">🔍</a>
+                </small>
+            </div>
+        </div>
+    </div>
+{% endfor %}

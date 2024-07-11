@@ -12,7 +12,7 @@
         "preview": "npx vite preview",
         "dev": "yarn clean && cross-env NODE_ENV=development run-p dev:*",
         "dev:eleventy": "npx @11ty/eleventy --watch",
-        "dev:vite": "npx vite --port 8888",
+        "dev:vite": "npx vite --port 8888 --host",
         "build": "cross-env NODE_ENV=production run-s clean build:* postbuild",
         "build:eleventy": "npx @11ty/eleventy",
         "build:vite": "npx vite build",
@@ -46,6 +46,7 @@
         "markdown-it-plain-text": "^0.3.0",
         "notion-to-md": "^3.1.1",
         "sharp": "^0.33.4",
+        "swiper": "^11.1.4",
         "tiny-slider": "^2.9.4",
         "vite": "^4.5.3"
     }

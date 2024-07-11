@@ -47,7 +47,7 @@ async function asyncImageShortcode(src, alt, sizes = "100vw", classes) {
     }
     let metadata = await Image(src, {
         formats: ["webp", "jpeg"],
-        widths: [634, 544, 454, 694, 514, 334],
+        widths: [311, 589, 454, 733, 910, 460, 684],
         outputDir: "_site/img/",
         sizes,
     });
