@@ -29,8 +29,8 @@ window.addEventListener("DOMContentLoaded", function () {
             },
         },
         autoplay: {
-            enabled: false,
-            delay: 1000,
+            enabled: true,
+            delay: 3000,
         },
         on: {
             init: function () {
