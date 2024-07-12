@@ -10,7 +10,7 @@
         "clear": "trash node_modules yarn.lock _site docs .cache src/styles/css src/_cache/images/.cache/*",
         "clean": "trash _site docs .cache src/styles/css src/_cache/images/.cache/*",
         "preview": "npx vite preview",
-        "dev": "yarn clean && cross-env NODE_ENV=development run-p dev:*",
+        "dev": "npm run clean && cross-env NODE_ENV=development run-p dev:*",
         "dev:eleventy": "npx @11ty/eleventy --watch",
         "dev:vite": "npx vite --port 8888 --host",
         "build": "cross-env NODE_ENV=production run-s clean build:* postbuild",
@@ -45,7 +45,6 @@
         "dotenv": "^16.4.5",
         "markdown-it-plain-text": "^0.3.0",
         "notion-to-md": "^3.1.1",
-        "sharp": "^0.33.4",
         "swiper": "^11.1.4",
         "tiny-slider": "^2.9.4",
         "vite": "^4.5.3"
