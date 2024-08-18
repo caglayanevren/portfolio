@@ -2,6 +2,8 @@
  * From https://github.com/thiagomgd/eleventy_notion_starter
  */
 
+const fs = require("fs");
+
 const { fetchFromNotion, getNotionProps } = require("../_11ty/notionHelpers");
 require("dotenv").config({ path: "../../.env" });
 const { Client } = require("@notionhq/client");
@@ -32,14 +34,6 @@ const getMetadata = (note) => {
         content: note.content,
     };
 };
-
-/* const getEmbed = (note) => {
-    return note.properties.Embed.url;
-}; */
-
-/* const getFormat = (note) => {
-    return note.properties.Format.select ? note.properties.Format.select.name : "text";
-}; */
 
 async function fetchPage(pageId) {
     const mdblocks = await n2m.pageToMarkdown(pageId);
@@ -97,12 +91,20 @@ function processAndReturn(notes) {
     });
 }
 
+const PUBLISHEDNOTES_CACHE_FILE_PATH = "src/_cache/publishedNotes.json";
+
 module.exports = async function () {
     console.log(">>> Checking for new notes...");
-    const newNotes = await fetchNotes();
-
-    console.log("newNotes: ", newNotes);
-    const publishedNotes = processAndReturn(newNotes);
-    console.log("publishedNotes: ", publishedNotes);
-    return publishedNotes;
+    if(process.env.NODE_ENV == "development" && false) {
+        const publishedNotes = await fs.promises.readFile(PUBLISHEDNOTES_CACHE_FILE_PATH);
+        return JSON.parse(publishedNotes);
+    } else {
+        const newNotes = await fetchNotes();
+        console.log("newNotes: ", newNotes);
+        const publishedNotes = processAndReturn(newNotes);
+        await fs.promises.writeFile(PUBLISHEDNOTES_CACHE_FILE_PATH, JSON.stringify(publishedNotes, null, 2)); 
+        console.log("publishedNotes: ", publishedNotes);
+        console.log('PUBLISHEDNOTES WRITTEN!');
+        return publishedNotes;
+    }
 };

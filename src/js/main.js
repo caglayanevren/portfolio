@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", function () {
             navbar.classList.remove("scrolled");
             nav.classList.remove("scrolled");
         }
-        if (scrollY > window.innerHeight) {
+        if (scrollY > window.innerHeight - 56 ) {
             navbar.classList.add("scrolled2");
             nav.classList.add("scrolled2");
         } else {
