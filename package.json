@@ -8,12 +8,13 @@
     "license": "MIT",
     "scripts": {
         "clear": "trash node_modules yarn.lock _site docs .cache src/styles/css src/_cache/images/.cache/*",
-        "clean": "trash _site docs .cache src/styles/css src/_cache/images/.cache/*",
+        "clean": "trash _site docs .cache src/styles/css",
+        "clean2": "trash _site docs .cache src/styles/css src/_cache/images/.cache/* src/_cache/publishedNotes.json",
         "preview": "npx vite preview",
         "dev": "npm run clean && cross-env NODE_ENV=development run-p dev:*",
         "dev:eleventy": "npx @11ty/eleventy --watch",
         "dev:vite": "npx vite --port 8888 --host",
-        "build": "cross-env NODE_ENV=production run-s clean build:* postbuild",
+        "build": "cross-env NODE_ENV=production run-s clean2 build:* postbuild",
         "build:eleventy": "npx @11ty/eleventy",
         "build:vite": "npx vite build",
         "postbuild": "node postbuild.mjs"

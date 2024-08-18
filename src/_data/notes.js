@@ -3,10 +3,17 @@
  */
 
 const fs = require("fs");
+const { mkdir } = require("fs/promises");
+const { Readable } = require('stream');
+const { finished } = require('stream/promises');
+const path = require("path");
+const __CACHEFOLDER = path.resolve(__dirname, "../_cache/images/.cache/");
+
 const metadata = require("../_data/metadata.json");
 const { fetchFromNotion, getNotionProps } = require("../_11ty/notionHelpers");
 require("dotenv").config({ path: "../../.env" });
 const { Client } = require("@notionhq/client");
+const slugify = require("slugify");
 
 // https://github.com/souvikinator/notion-to-md
 const { NotionToMarkdown } = require("notion-to-md");
@@ -92,19 +99,74 @@ function processAndReturn(notes) {
 }
 
 const PUBLISHEDNOTES_CACHE_FILE_PATH = "src/_cache/publishedNotes.json";
+const IMAGEFOLDER = "src/_cache/images/.cache"
+
+const slugOptions = {
+    replacement: "-",
+    remove: /[&,’+()$~%.'":*?<>{}]/g,
+    lower: true,
+    customReplacements: [
+        ["Ö", "o"],
+        ["ö", "o"],
+        ["Ü", "u"],
+        ["ü", "u"],
+        ["Ş", "s"],
+        ["ş", "s"],
+        ["Ğ", "g"],
+        ["ğ", "g"],
+        ["Ç", "c"],
+        ["ç", "c"],
+        ["İ", "i"],
+        ["ı", "i"],
+        [".", ""],
+        ["’", ""],
+        ["’", ""],
+        ["’", ""],
+    ],
+};
+
+async function writeAllImagesToFolder(notes) {
+    notes.forEach(async note => {
+        const data = {
+            imageurl: note.image[0],
+            imagename: `${note.sort}-${slugify(note.name, slugOptions)}`
+        }
+        const downloadFile = (async (url, fileName) => {
+          const res = await fetch(url);
+          if (!fs.existsSync(IMAGEFOLDER)) await mkdir(IMAGEFOLDER);
+          const destination = path.resolve(IMAGEFOLDER, `${fileName}.png`);
+          const fileStream = fs.createWriteStream(destination, { flags: 'w' });
+          await finished(Readable.fromWeb(res.body).pipe(fileStream));
+        });       
+        await downloadFile(data.imageurl, data.imagename);
+    });
+}
 
 module.exports = async function () {
     console.log(">>> Checking for new notes...");
     if(process.env.NODE_ENV == "development" && !metadata.fetchall) {
-        const publishedNotes = await fs.promises.readFile(PUBLISHEDNOTES_CACHE_FILE_PATH);
-        return JSON.parse(publishedNotes);
+        const readNotes = await fs.promises.readFile(PUBLISHEDNOTES_CACHE_FILE_PATH);
+        const publishedNotes = JSON.parse(readNotes)
+        publishedNotes.forEach(async (note) => {
+            const imagename = `${note.sort}-${slugify(note.name, slugOptions)}`;
+            note.image[0] = path.resolve(__CACHEFOLDER, `${imagename}.png`);
+        });
+        console.log("publishedNotes: ", publishedNotes);
+        return publishedNotes;
     } else {
         const newNotes = await fetchNotes();
-        console.log("newNotes: ", newNotes);
+        //console.log("newNotes: ", newNotes);
         const publishedNotes = processAndReturn(newNotes);
-        await fs.promises.writeFile(PUBLISHEDNOTES_CACHE_FILE_PATH, JSON.stringify(publishedNotes, null, 2)); 
         console.log("publishedNotes: ", publishedNotes);
-        console.log('PUBLISHEDNOTES WRITTEN!');
+        
+        if(process.env.NODE_ENV == "development") {
+            await writeAllImagesToFolder(publishedNotes);
+            console.log('NOTES IMAGES WRITTEN!');
+    
+            await fs.promises.writeFile(PUBLISHEDNOTES_CACHE_FILE_PATH, JSON.stringify(publishedNotes, null, 2));
+            console.log('publishedNotes.json IS WRITTEN!');
+        }
+
         return publishedNotes;
     }
 };
