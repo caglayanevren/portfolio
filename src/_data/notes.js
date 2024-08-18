@@ -3,7 +3,7 @@
  */
 
 const fs = require("fs");
-
+const metadata = require("../_data/metadata.json");
 const { fetchFromNotion, getNotionProps } = require("../_11ty/notionHelpers");
 require("dotenv").config({ path: "../../.env" });
 const { Client } = require("@notionhq/client");
@@ -95,7 +95,7 @@ const PUBLISHEDNOTES_CACHE_FILE_PATH = "src/_cache/publishedNotes.json";
 
 module.exports = async function () {
     console.log(">>> Checking for new notes...");
-    if(process.env.NODE_ENV == "development" && false) {
+    if(process.env.NODE_ENV == "development" && !metadata.fetchall) {
         const publishedNotes = await fs.promises.readFile(PUBLISHEDNOTES_CACHE_FILE_PATH);
         return JSON.parse(publishedNotes);
     } else {

@@ -9,7 +9,7 @@
     "linktext": "sanghaaspat.com",
     "humanstxtlink": null,
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/81a8c54b-408d-4f11-b621-ff5058638333/sangha-aspat.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=3fd1cb6b6b0d361cda3f84a92a1f6fc06e5868e8a2a48a657e358f78189fa74e&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/81a8c54b-408d-4f11-b621-ff5058638333/sangha-aspat.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=747d0225e55509f6b6c238f51f3f0747ba8dda23453f7ae1f832ccb8a1047521&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\n[Notion](https://www.notion.so/) integrated, responsive website with [Next.js](https://nextjs.org/)\n\n"
@@ -25,7 +25,7 @@
     "linktext": "yatirimciiliskileri.sabanci.com/2022-Digital-Annual-Report",
     "humanstxtlink": "https://yatirimciiliskileri.sabanci.com/2022-Digital-Annual-Report/humans.txt",
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/6fc6ac42-9c3d-4b43-826f-7b4610ebdaff/Asset_15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=aca3ed80d56911158935e2579a6cb556f9425ee70b1e05113311e6919d7bf980&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/6fc6ac42-9c3d-4b43-826f-7b4610ebdaff/Asset_15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=dc91587ac9095a6c655832a53f3255dee052291b8b7263cc22e9e33f7f19756b&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\nStatic, responsive website with [11ty](https://www.11ty.dev/), [Vite](https://vitejs.dev/), [FullPageJs](https://github.com/alvarotrigo/fullpage.js/tree/2.9.7)\n\n"
@@ -41,7 +41,7 @@
     "linktext": "avanostilekitchen.com",
     "humanstxtlink": "https://www.avanostilekitchen.com/humans.txt",
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/05e75f9b-f61a-44b5-9274-742917aab81c/Asset_16.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=dd13ef384ee13890b60420c01c9d5b52c514fdca10abe1bf0da90a6593bbe7af&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/05e75f9b-f61a-44b5-9274-742917aab81c/Asset_16.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=a15b775f658c154811284752ddca617df159548e6b9570428454409a9f9b3929&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\nJoomla CMS responsive website\n\n"
@@ -57,7 +57,7 @@
     "linktext": "sendebiryildizol.yildiz.edu.tr",
     "humanstxtlink": "http://www.sendebiryildizol.yildiz.edu.tr/assets/images/humans.91c9ec67.txt",
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/89aea0af-3c92-4336-9c2a-ef5d276a612e/Asset_20.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=203b637350e34badd7e2c77adfc22e476ada216df3560216c0ea6b2c360c1f8c&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/89aea0af-3c92-4336-9c2a-ef5d276a612e/Asset_20.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=8a124b17fd8c04bde80dd34f9c147d4d9ad142d29d7dea7f94c006651db06ad8&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\nStatic, Responsive website with HTML5, SCSS, jQuery and Parcel Bundler\n\n"
@@ -73,7 +73,7 @@
     "linktext": "ulvikocailik.com.tr",
     "humanstxtlink": "https://www.ulvikocailik.com.tr/humans.txt",
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/ae0098d5-9b66-443c-8376-9a9329cb59a8/Asset_17.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=3d1868593e16ca38c3708930c7f4bfb4f310d291137b20633728cf8fbed4baec&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/ae0098d5-9b66-443c-8376-9a9329cb59a8/Asset_17.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=475f88f4f730bf9a77e2fece452d046004a0db54d8a07e1e0422acfe5fc5d580&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\nJoomla CMS responsive website\n\n"
@@ -89,7 +89,7 @@
     "linktext": "garantiemeklilik.com.tr/faaliyetraporu2015",
     "humanstxtlink": null,
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/f9ba32df-a2f2-4d0a-a4bb-6d073a512c23/Asset_18.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=6a1499355e77961845383a6784c8b03e06bf4a100c2a5823ad375181fafc700c&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/f9ba32df-a2f2-4d0a-a4bb-6d073a512c23/Asset_18.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=0fea6b390bd31642789b2cd192eb9f5fe28fc8c1580d2bd14dbf77fd75994aee&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\nStatic responsive website with HTML5, CSS and jQuery. This web site is deemed worthy of an award 🥇 by [ARC](https://mercommawards.com/arc/archive/2016/categoryWinners/onlineInteractive.htm#insFin) 🔗\n\n"
@@ -105,7 +105,7 @@
     "linktext": "borusan.com",
     "humanstxtlink": "https://www.borusan.com/Uploads/raporlar/faaliyet/2019/assets/images/humans.5adc550a.txt",
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/0d69e8a0-9e29-4cf0-8308-ee9201ddf2b7/Asset_19.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=9c17872563f532c56d8fc4525dfa949b0d73cbcc5061286c3c1cb2772673b3f3&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/0d69e8a0-9e29-4cf0-8308-ee9201ddf2b7/Asset_19.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=3161d2e1761fa1c5220a805663f97b9b6ae9172c9404c2bc4c3b89e62853bfb6&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\nStatic responsive website with Parcel Bundler, SCSS, jQuery and [FullPageJS](https://github.com/alvarotrigo/fullpage.js/tree/2.9.7)\n\n"
@@ -121,7 +121,7 @@
     "linktext": "finarkurumsal.com",
     "humanstxtlink": "https://www.finarkurumsal.com/humans.txt",
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/ffe9aa02-da5b-425a-ae1f-619c89d77757/Asset_21.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=b11151a57ea487414a833d49224c747ffdd7bcc3fcfbedaa4f101344ec774aa3&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/ffe9aa02-da5b-425a-ae1f-619c89d77757/Asset_21.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=21527ae9d7122b0a630e16d4e18eae08be92b644704d590d752f7f06fe02b803&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\nStatic, Responsive website with HTML5, SCSS and jQuery\n\n"
@@ -137,7 +137,7 @@
     "linktext": "astertextile.com",
     "humanstxtlink": "https://www.astertextile.com/humans.txt",
     "image": [
-      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/594ed412-d45e-43db-92a1-24b6a85ff1c8/Asset_22.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T172109Z&X-Amz-Expires=3600&X-Amz-Signature=0b3d44e62fdc14d208a9f6ae7c2f1c6620aa292e9e71ed6d1ee92fcd7bbf6331&X-Amz-SignedHeaders=host&x-id=GetObject"
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/594ed412-d45e-43db-92a1-24b6a85ff1c8/Asset_22.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240818%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240818T174452Z&X-Amz-Expires=3600&X-Amz-Signature=2e42f45e60e5fdd1c60340b8f2580be4049a29bcf643aab5a83dcbe382c94d38&X-Amz-SignedHeaders=host&x-id=GetObject"
     ],
     "content": {
       "parent": "\nJoomla CMS responsive website\n\n"
