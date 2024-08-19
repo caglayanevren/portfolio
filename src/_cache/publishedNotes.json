@@ -1,0 +1,146 @@
+[
+  {
+    "id": "a319a731-adf9-471c-b3be-5af3ff37a42e",
+    "sort": 1,
+    "name": "Sangha Aspat",
+    "created_time": "2023-08-31T18:27:00.000Z",
+    "last_edited_time": "2023-10-06T20:04:00.000Z",
+    "link": "https://www.sanghaaspat.com",
+    "linktext": "sanghaaspat.com",
+    "humanstxtlink": null,
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/81a8c54b-408d-4f11-b621-ff5058638333/sangha-aspat.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=4424a9dbb35048690a1b5029cee39ca75d91e0965d1da7021abc989a9ff4e5b2&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\n[Notion](https://www.notion.so/) integrated, responsive website with [Next.js](https://nextjs.org/)\n\n"
+    }
+  },
+  {
+    "id": "76b274c5-f738-4a1e-98d3-d7fb30020f6c",
+    "sort": 2,
+    "name": "Sabancı Annual Report 2022",
+    "created_time": "2023-05-01T09:39:00.000Z",
+    "last_edited_time": "2023-10-06T20:05:00.000Z",
+    "link": "https://yatirimciiliskileri.sabanci.com/2022-Digital-Annual-Report/en/index.html",
+    "linktext": "yatirimciiliskileri.sabanci.com/2022-Digital-Annual-Report",
+    "humanstxtlink": "https://yatirimciiliskileri.sabanci.com/2022-Digital-Annual-Report/humans.txt",
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/6fc6ac42-9c3d-4b43-826f-7b4610ebdaff/Asset_15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=2fb387a10395607e3a8431df36a123df0a5684dc0f6d67c8c1ddba790292fbe5&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\nStatic, responsive website with [11ty](https://www.11ty.dev/), [Vite](https://vitejs.dev/), [FullPageJs](https://github.com/alvarotrigo/fullpage.js/tree/2.9.7)\n\n"
+    }
+  },
+  {
+    "id": "5f033557-2462-4214-ac22-b21f2237f4de",
+    "sort": 3,
+    "name": "Avanos Tile Official Site",
+    "created_time": "2022-10-11T11:03:00.000Z",
+    "last_edited_time": "2023-08-31T18:54:00.000Z",
+    "link": "https://www.avanostilekitchen.com/",
+    "linktext": "avanostilekitchen.com",
+    "humanstxtlink": "https://www.avanostilekitchen.com/humans.txt",
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/05e75f9b-f61a-44b5-9274-742917aab81c/Asset_16.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=b2342142a555ab146c0863c95ca256aa0264303a9aa08d194cbf87011132bed6&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\nJoomla CMS responsive website\n\n"
+    }
+  },
+  {
+    "id": "ea416179-4ce2-45ea-8743-445b7c7182df",
+    "sort": 4,
+    "name": "Sen de Bir Yıldız Ol",
+    "created_time": "2022-06-14T15:13:00.000Z",
+    "last_edited_time": "2023-08-31T18:49:00.000Z",
+    "link": "http://www.sendebiryildizol.yildiz.edu.tr/",
+    "linktext": "sendebiryildizol.yildiz.edu.tr",
+    "humanstxtlink": "http://www.sendebiryildizol.yildiz.edu.tr/assets/images/humans.91c9ec67.txt",
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/89aea0af-3c92-4336-9c2a-ef5d276a612e/Asset_20.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=5d1a58b62201ddd3068b75e1d006c3df6f016437100d172011ec76fbd7ef4c48&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\nStatic, Responsive website with HTML5, SCSS, jQuery and Parcel Bundler\n\n"
+    }
+  },
+  {
+    "id": "eb9cb48f-8727-4ade-a357-a40900f15741",
+    "sort": 5,
+    "name": "Ulvi Kocailik Personel Site",
+    "created_time": "2022-10-07T14:06:00.000Z",
+    "last_edited_time": "2023-08-31T18:54:00.000Z",
+    "link": "https://www.ulvikocailik.com.tr/",
+    "linktext": "ulvikocailik.com.tr",
+    "humanstxtlink": "https://www.ulvikocailik.com.tr/humans.txt",
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/ae0098d5-9b66-443c-8376-9a9329cb59a8/Asset_17.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=c3f8599d06ab67276f2eea9085ec6bc096d1b4605dd9d062d7938d37ba436a0d&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\nJoomla CMS responsive website\n\n"
+    }
+  },
+  {
+    "id": "2972a31a-42c5-4fd5-b0c8-cc3863a2d2e7",
+    "sort": 6,
+    "name": "Garanti Emeklilik 2015 Annual Report",
+    "created_time": "2022-06-06T12:28:00.000Z",
+    "last_edited_time": "2023-08-31T18:49:00.000Z",
+    "link": "https://www.garantiemeklilik.com.tr/faaliyetraporu2015/en/index.html",
+    "linktext": "garantiemeklilik.com.tr/faaliyetraporu2015",
+    "humanstxtlink": null,
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/f9ba32df-a2f2-4d0a-a4bb-6d073a512c23/Asset_18.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=e6a02f013002438c17ec62a75bcd73a0fc79b3b64303f282eb36a13e931cc1ae&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\nStatic responsive website with HTML5, CSS and jQuery. This web site is deemed worthy of an award 🥇 by [ARC](https://mercommawards.com/arc/archive/2016/categoryWinners/onlineInteractive.htm#insFin) 🔗\n\n"
+    }
+  },
+  {
+    "id": "9933cea4-c542-4854-99ea-0f96874f2e1f",
+    "sort": 7,
+    "name": "Borusan 2019 Annual Report",
+    "created_time": "2022-06-06T12:28:00.000Z",
+    "last_edited_time": "2024-05-23T17:37:00.000Z",
+    "link": "https://www.borusan.com/Uploads/raporlar/faaliyet/2019/home.html",
+    "linktext": "borusan.com",
+    "humanstxtlink": "https://www.borusan.com/Uploads/raporlar/faaliyet/2019/assets/images/humans.5adc550a.txt",
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/0d69e8a0-9e29-4cf0-8308-ee9201ddf2b7/Asset_19.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=6ef66edcd6cbdb39992a685d5ba9b0384e42af7ebc1b769d00b0e943f0499b82&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\nStatic responsive website with Parcel Bundler, SCSS, jQuery and [FullPageJS](https://github.com/alvarotrigo/fullpage.js/tree/2.9.7)\n\n"
+    }
+  },
+  {
+    "id": "dc87799c-4a3f-4f88-9f12-befc5e1a24ad",
+    "sort": 8,
+    "name": "Finar",
+    "created_time": "2022-06-06T12:28:00.000Z",
+    "last_edited_time": "2023-08-31T18:49:00.000Z",
+    "link": "https://www.finarkurumsal.com",
+    "linktext": "finarkurumsal.com",
+    "humanstxtlink": "https://www.finarkurumsal.com/humans.txt",
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/ffe9aa02-da5b-425a-ae1f-619c89d77757/Asset_21.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=790208292d593cd76146c0fa52816d865fadaf62c4a0242a2f4f77b81e436ebe&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\nStatic, Responsive website with HTML5, SCSS and jQuery\n\n"
+    }
+  },
+  {
+    "id": "9f5035d2-ccbe-4c64-801c-9df78acbfb72",
+    "sort": 9,
+    "name": "Aster Textile",
+    "created_time": "2023-10-24T11:54:00.000Z",
+    "last_edited_time": "2023-12-06T20:32:00.000Z",
+    "link": "https://www.astertextile.com",
+    "linktext": "astertextile.com",
+    "humanstxtlink": "https://www.astertextile.com/humans.txt",
+    "image": [
+      "https://prod-files-secure.s3.us-west-2.amazonaws.com/1739cefa-5b3b-4f9c-a516-dcb559a3e115/594ed412-d45e-43db-92a1-24b6a85ff1c8/Asset_22.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240819T071415Z&X-Amz-Expires=3600&X-Amz-Signature=c610b20696453e4ff45cd18a530424330a05e08e0daeafc3f7fb3ffb2f2bb8b9&X-Amz-SignedHeaders=host&x-id=GetObject"
+    ],
+    "content": {
+      "parent": "\nJoomla CMS responsive website\n\n"
+    }
+  }
+]

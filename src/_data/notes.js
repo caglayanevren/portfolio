@@ -9,7 +9,7 @@ const { finished } = require('stream/promises');
 const path = require("path");
 const __CACHEFOLDER = path.resolve(__dirname, "../_cache/images/.cache/");
 
-const metadata = require("../_data/metadata.json");
+const metadata = require("../_data/site.json");
 const { fetchFromNotion, getNotionProps } = require("../_11ty/notionHelpers");
 require("dotenv").config({ path: "../../.env" });
 const { Client } = require("@notionhq/client");
@@ -158,7 +158,7 @@ module.exports = async function () {
         //console.log("newNotes: ", newNotes);
         const publishedNotes = processAndReturn(newNotes);
         console.log("publishedNotes: ", publishedNotes);
-        
+
         if(process.env.NODE_ENV == "development") {
             await writeAllImagesToFolder(publishedNotes);
             console.log('NOTES IMAGES WRITTEN!');
