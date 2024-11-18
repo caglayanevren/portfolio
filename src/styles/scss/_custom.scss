@@ -314,7 +314,7 @@ nav.navbar {
                 font-size: 0.95em;
                 &:nth-child(1) {
                     grid-row: 1 / 3;
-                    font-size: 1.85em;
+                    font-size: 2.15em;
                     margin: auto;
                     padding-right: 3px;
                 }
@@ -383,19 +383,23 @@ nav.navbar {
     .card {
         margin-left: 0;
         margin-right: 0;
+        .card-body {
+            padding: 2rem;
+        }
         .card-title {
             font-family: var(--font-second);
             font-weight: var(--bold);
         }
         .card-text {
-            min-height: 72px;
+            min-height: 96px;
             p {
                 margin-bottom: 0;
             }
         }
         .card-img-top {
-            border-top-left-radius: calc(0.25rem - 1px);
-            border-top-right-radius: calc(0.25rem - 1px);
+            // border-top-left-radius: calc(0.25rem - 1px);
+            // border-top-right-radius: calc(0.25rem - 1px);
+            margin-block-end: 2em;
         }
     }
 }

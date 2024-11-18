@@ -22,9 +22,9 @@ window.addEventListener("DOMContentLoaded", function () {
                 slidesPerView: 2,
                 spaceBetween: 60,
             },
-            // when window width is >= 1440px
-            1440: {
-                slidesPerView: 2,
+            // when window width is >= 1920px
+            1920: {
+                slidesPerView: 3,
                 spaceBetween: 100,
             },
         },
