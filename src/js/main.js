@@ -1,16 +1,16 @@
-import Swiper from "swiper";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+//import Swiper from "swiper";
+//import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import "./modernizr";
 import "../../src/styles/scss/bundle.scss";
 import "../css/backgrounds.css";
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+//import "swiper/css";
+//import "swiper/css/autoplay";
+//import "swiper/css/navigation";
+//import "swiper/css/pagination";
 import "bootstrap";
 
 window.addEventListener("DOMContentLoaded", function () {
-    const swiper = new Swiper(".swiper", {
+    /* const swiper = new Swiper(".swiper", {
         modules: [Navigation, Pagination, Scrollbar, Autoplay],
         // Default parameters
         slidesPerView: 1,
@@ -49,7 +49,7 @@ window.addEventListener("DOMContentLoaded", function () {
             el: ".swiper-scrollbar",
             draggable: true,
         },
-    });
+    }); */
 
     var myOffcanvas = document.getElementById("navbarsDefault");
     var fa = document.querySelector(".fa-solid");

@@ -1,18 +1,18 @@
 {% for note in notes %}
-    <div class="swiper-slide">
-        <div class="card">
-            <div class="card-body">
-                <a href="{{ note.link | safe }}" target="_blank" class="w-100 d-block">
-                    {% asyncimage note.image[0], note.name, "(max-width:425.98px) 311px, (max-width:575.98px) 96vw, (max-width:767.98px) 589px, (max-width:991.98px) 733px, (max-width:1199.98px) 910px, (max-width:1399.98px) 460px, (min-width:1400px) 684px, (min-width:1920px) 1000px", "card-img-top img-fluid" %}
-                </a>
-                <h5 class="card-title">{{ note.name | safe }}</h5>
-                <div class="card-text">{{ note.content.parent | markdown | safe }}</div>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted d-flex justify-content-between" style="padding: 3px 0 2px;">
-                    <a href="{{ note.link | safe }}" target="_blank" rel="noopener noreferrer">{{ note.linktext | safe }}</a>
-                    <a title="Credits" href="{{ note.humanstxtlink | safe }}" target="_blank" rel="noopener noreferrer">🔍</a>
+    <div class="card mb-5">
+        <div class="card-body">
+            <a href="{{ note.link | safe }}" target="_blank" class="d-block flex-shrink-0" id="cardimage">
+                {% asyncimage note.image[0], note.name, "(max-width:425.98px) 333px, (max-width:575.98px) 82vw, (max-width:767.98px) 453px, (max-width:991.98px) 615px, (max-width:1199.98px) 470px, (max-width:1399.98px) 569px, (min-width:1400px) 668px", "card-img-top img-fluid" %}
+            </a>
+            <div class="d-flex flex-column-reverse flex-lg-column justify-content-between flex-grow-1">
+                <small class="text-muted d-flex justify-content-between align-items-center mt-4 mt-lg-0" style="padding: 3px 0 2px;">
+                    <a href="{{ note.link | safe }}" target="_blank" style="font-size: .65rem;letter-spacing: 0.75px;">{{ note.linktext | safe }}</a>
+                    {% if note.humanstxtlink %}<a title="Credits" href="{{ note.humanstxtlink | safe }}" target="_blank">🔍</a>{% endif %}
                 </small>
+                <div>
+                    <h5 class="card-title">{{ note.name | safe }}</h5>
+                    <div class="card-text">{{ note.content.parent | markdown | safe }}</div>
+                </div>
             </div>
         </div>
     </div>

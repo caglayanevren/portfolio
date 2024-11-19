@@ -364,42 +364,48 @@ nav.navbar {
 }
 #works {
     width: 100%;
-    overflow-x: scroll;
+    //overflow-x: scroll;
     padding-inline: 1rem;
     margin-inline: auto;
-    --swiper-theme-color: var(--color-turuncu);
-}
-.card-deck {
-    a {
-        text-decoration: none;
-        color: var(--color-turuncu);
-    }
-    @include min-lg {
-        --bs-columns: 2;
-    }
-    @include max-lg {
-        --bs-columns: 1;
-    }
-    .card {
-        margin-left: 0;
-        margin-right: 0;
-        .card-body {
-            padding: 2rem;
+    //--swiper-theme-color: var(--color-turuncu);
+    .card-deck {
+        a {
+            text-decoration: none;
+            color: var(--color-turuncu);
         }
-        .card-title {
-            font-family: var(--font-second);
-            font-weight: var(--bold);
-        }
-        .card-text {
-            min-height: 96px;
-            p {
-                margin-bottom: 0;
+        .card {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            background: hsl(0, 0%, 98%);
+            .card-body {
+                padding: clamp(1rem,4vw,2.5rem);
+                display: flex;
+                gap:2rem;
+                @include max-lg {
+                    flex-direction: column;
+                }
+                .card-title {
+                    //font-family: var(--font);
+                    font-family: var(--font-second);
+                    font-weight: var(--bold);
+                }
+                .card-text {
+                    p {
+                        margin-bottom: 1vw;
+                    }
+                }
+                #cardimage {
+                    width:55%;
+                    @include max-lg {
+                        width:100%;
+                    }
+                    
+                    .card-img-top {
+                        width:100%;
+                    }
+                }
             }
-        }
-        .card-img-top {
-            // border-top-left-radius: calc(0.25rem - 1px);
-            // border-top-right-radius: calc(0.25rem - 1px);
-            margin-block-end: 2em;
         }
     }
 }

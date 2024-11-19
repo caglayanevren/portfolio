@@ -7,7 +7,7 @@
     },
     "license": "MIT",
     "scripts": {
-        "clear": "trash node_modules yarn.lock _site docs .cache src/styles/css src/_cache/images/.cache/*",
+        "clear": "trash node_modules package-lock.json _site docs .cache src/styles/css src/_cache/images/.cache/*",
         "clean": "trash _site docs .cache src/styles/css",
         "clean2": "trash _site docs .cache src/styles/css src/_cache/images/.cache/* src/_cache/publishedNotes.json",
         "preview": "npx vite preview",
@@ -46,8 +46,10 @@
         "dotenv": "^16.4.5",
         "markdown-it-plain-text": "^0.3.0",
         "notion-to-md": "^3.1.1",
-        "swiper": "^11.1.14",
-        "tiny-slider": "^2.9.4",
         "vite": "^4.5.5"
-    }
+    },
+    "engines": {
+        "node": "20.18.0"
+    },
+    "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a"
 }

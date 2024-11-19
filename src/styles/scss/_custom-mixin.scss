@@ -21,7 +21,11 @@
     @include defineColorRGB(--gray-900, #1a1a1a);
     @include defineColorRGB(--black, #000000);
     @include defineColorRGB(--color-turuncu, #ff8500);
-    --gradient: linear-gradient(135deg, #ff8500 0%, #d100ff 100%);
+    @include defineColorRGB(--color-pembe, #d100ff);
+    @include defineColorRGB(--color-turuncu-2, hsl(31, 100%, 75%));
+    @include defineColorRGB(--color-pembe-2, hsl(289, 100%, 75%));
+    --gradient: linear-gradient(135deg, var(--color-turuncu) 0%, var(--color-pembe) 100%);
+    --gradient-2: linear-gradient(135deg, var(--color-turuncu-2) 0%, var(--color-pembe-2) 100%);
     --font: 'Inter', sans-serif;
     --font-second: 'Playfair Display', serif;
     --bold: 900;
